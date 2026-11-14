@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Όνομα Επώνυμο – Φιλόλογος | Ιδιαίτερα Μαθήματα</title>
+<meta name="description" content="Φιλόλογος με εμπειρία στη διδασκαλία Νεοελληνικής Γλώσσας, Λογοτεχνίας και Αρχαίων Ελληνικών. Ιδιαίτερα μαθήματα για Γυμνάσιο και Λύκειο.">
+<meta property="og:title" content="Όνομα Επώνυμο – Φιλόλογος">
+<meta property="og:description" content="Ιδιαίτερα μαθήματα Φιλολογικών για Γυμνάσιο και Λύκειο.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><span class="mono" aria-hidden="true">Φ</span><span class="t">Όνομα Επώνυμο</span></a>
+    <nav id="nav" aria-label="Κύριο μενού">
+      <button id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Άνοιγμα μενού">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+      <ul id="menu">
+        <li><a href="#about">Σχετικά</a></li>
+        <li><a href="#inspiration">Έμπνευση</a></li>
+        <li><a href="#services">Μαθήματα</a></li>
+        <li><a href="#cv">Βιογραφικό</a></li>
+        <li><a href="#results">Επιτυχίες</a></li>
+        <li><a href="#contact">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Φιλόλογος · Ιδιαίτερα μαθήματα</p>
+        <h1>Η γλώσσα γίνεται κατανοητή, <em>όταν τη νιώθεις.</em></h1>
+        <p class="lead">Μαθήματα Νεοελληνικής Γλώσσας, Λογοτεχνίας και Αρχαίων Ελληνικών, με υπομονή, μέθοδο και αποτελέσματα.</p>
+        <div class="tags"><span>Γυμνάσιο</span><span>Λύκειο</span><span>Πανελλαδικές</span></div>
+        <div class="btns">
+          <a class="btn primary" href="#contact">Κλείσε μάθημα</a>
+          <a class="btn ghost" href="#cv">Βιογραφικό</a>
+        </div>
+      </div>
+      <div class="portrait" aria-label="Χώρος για φωτογραφία">
+        <div class="frame"><div class="photo"><div><b>Φ</b>Εδώ μπαίνει<br>η φωτογραφία</div></div></div>
+        <div class="stamp">XX<br>χρόνια<br>εμπειρίας</div>
+      </div>
+    </div>
+  </div>
+  <div class="meander" aria-hidden="true"></div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">Α΄</span><h2>Σχετικά με μένα</h2></div>
+      <div class="about">
+        <p>Είμαι φιλόλογος με πολυετή εμπειρία στη διδασκαλία. Πιστεύω ότι κάθε μαθητής μπορεί να γράψει καλά και να καταλάβει τα κείμενα, αρκεί να έχει τη σωστή καθοδήγηση.</p>
+        <p>Στα μαθήματά μου δίνω έμφαση στην κατανόηση και όχι στην αποστήθιση, και προσαρμόζω τον ρυθμό στις ανάγκες του κάθε παιδιού.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="inspiration" class="paper">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">Β΄</span><h2>Έμπνευση της ημέρας</h2></div>
+      <article class="insp" aria-live="polite">
+        <div class="insp-top">
+          <svg viewBox="0 0 64 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 16 32 4l28 12zM6 16h52v4H6zM12 20v20M24 20v20M40 20v20M52 20v20M6 40h52v4H6z"/></svg>
+          <span class="insp-date" id="inspDate"></span>
+        </div>
+        <blockquote id="inspText"></blockquote>
+        <p class="insp-by" id="inspBy"></p>
+        <p class="insp-note" id="inspNote"></p>
+        <div class="insp-nav">
+          <button type="button" id="inspPrev" aria-label="Προηγούμενο κείμενο">← Προηγούμενο</button>
+          <span id="inspCount"></span>
+          <button type="button" id="inspNext" aria-label="Επόμενο κείμενο">Επόμενο →</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">Γ΄</span><h2>Μαθήματα</h2></div>
+      <ul class="svc">
+        <li><span class="n">α΄</span><h3>Νεοελληνική Γλώσσα</h3><p>Γραμματική, συντακτικό, κατανόηση κειμένου και παραγωγή λόγου.</p></li>
+        <li><span class="n">β΄</span><h3>Έκθεση</h3><p>Δομή, επιχειρηματολογία και τεχνικές για άρτιο γραπτό λόγο.</p></li>
+        <li><span class="n">γ΄</span><h3>Λογοτεχνία</h3><p>Ανάλυση κειμένων, μορφολογία και ερμηνευτική προσέγγιση.</p></li>
+        <li><span class="n">δ΄</span><h3>Αρχαία Ελληνικά</h3><p>Μετάφραση, γραμματική και συντακτικό για Γυμνάσιο και Λύκειο.</p></li>
+        <li><span class="n">ε΄</span><h3>Προετοιμασία Πανελληνίων</h3><p>Στοχευμένη επανάληψη και ασκήσεις σε πραγματικά θέματα.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cv" class="paper">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">Δ΄</span><h2>Βιογραφικό</h2></div>
+      <ul class="timeline">
+        <li><span class="when">20XX – σήμερα</span><h3>Ιδιαίτερα μαθήματα Φιλολογικών</h3><p>Ατομικά και ολιγομελή τμήματα, Γυμνάσιο και Λύκειο.</p></li>
+        <li><span class="when">20XX – 20XX</span><h3>Φροντιστήριο / Σχολείο</h3><p>Διδασκαλία φιλολογικών μαθημάτων.</p></li>
+        <li><span class="when">20XX</span><h3>Πτυχίο Φιλολογίας</h3><p>Πανεπιστήμιο [όνομα], βαθμός [Χ].</p></li>
+        <li><span class="when">20XX</span><h3>Πρόσθετες σπουδές</h3><p>Μεταπτυχιακό, σεμινάρια, ξένες γλώσσες κ.ά.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="results" class="results">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">Ε΄</span><h2>Επιτυχίες</h2></div>
+      <div class="statgrid">
+        <div class="stat"><b>XX+</b><span>χρόνια εμπειρίας</span></div>
+        <div class="stat"><b>XXX</b><span>μαθητές</span></div>
+        <div class="stat"><b>XX</b><span>εισαγωγές σε ΑΕΙ</span></div>
+        <div class="stat"><b>XX%</b><span>βελτίωση βαθμού</span></div>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote"><p>Εδώ μπαίνει μια πραγματική κριτική από μαθητή ή γονέα.</p><small>— Όνομα, γονέας</small></blockquote>
+        <blockquote class="quote"><p>Δεύτερη κριτική, με τα δικά τους λόγια.</p><small>— Όνομα, μαθητής</small></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">ΣΤ΄</span><h2>Επικοινωνία</h2></div>
+      <div class="card">
+        <div>
+          <h3>Όνομα Επώνυμο</h3>
+          <p class="role">Φιλόλογος</p>
+          <ul class="list">
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><div><small>Τηλέφωνο</small><a href="tel:+306900000000">69X XXX XXXX</a></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small>Email</small><a href="mailto:onoma@example.com">onoma@example.com</a></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>Περιοχή</small>Πόλη, διεύθυνση ή online μαθήματα</div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Ωράριο</small>Δευτέρα – Παρασκευή, 16:00 – 21:00</div></li>
+          </ul>
+        </div>
+        <div>
+          <p class="social-t">Βρείτε με και εδώ</p>
+          <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="meander" aria-hidden="true"></div>
+  <p class="alpha" aria-hidden="true">Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω</p>
+  <div class="wrap">© <span id="y"></span> Όνομα Επώνυμο · Φιλόλογος</div>
+</footer>
+
+<div class="dock">
+  <a href="tel:+306900000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Κλήση</a>
+  <a href="#contact">Κλείσε μάθημα</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
